@@ -11,13 +11,13 @@ if (empty($_SESSION['mail'])){
 
 if (isset($_POST))
 {
-    $val = $_POST['v'];
-    $val = $_POST['a'];
-    $val = $_POST['b'];
-    $val = $_POST['c'];
-    $val = $_POST['d'];
-    $val = $_POST['e'];
-    $val = $_POST['f'];
+    echo $_POST['v'];
+    echo $_POST['a'];
+    echo $_POST['b'];
+    echo $_POST['c'];
+    echo $_POST['d'];
+    echo $_POST['e'];
+    echo $_POST['f'];
 }
 
 
