@@ -10,7 +10,6 @@ if (empty($_SESSION['mail'])){
 }
 
 if (isset($_POST))
-    //VERIFY: AI XSS issue #19, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/19
     var_dump($_POST);
 
 
