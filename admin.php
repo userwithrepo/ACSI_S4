@@ -10,7 +10,7 @@ if (empty($_SESSION['mail'])){
 }
 
 if (isset($_POST))
-    //TODO: AI XSS issue #5, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/5
+    //TODO: AI XSS issue #6, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/6
     var_dump($_POST);
 
 
