@@ -9,15 +9,22 @@ if (empty($_SESSION['mail'])){
 	$utilisateur = $_SESSION['mail'];
 }
 
-if (isset($_POST['v']))
+if (isset($_POST))
 {
-    $val = $_POST['v'];
-    $val = $_POST['a'];
-    $val = $_POST['b'];
-    $val = $_POST['c'];
-    $val = $_POST['d'];
-    $val = $_POST['e'];
-    $val = $_POST['f'];
+    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    echo $_POST['v'];
+    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    echo $_POST['a'];
+    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    echo $_POST['b'];
+    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    echo $_POST['c'];
+    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    echo $_POST['d'];
+    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    echo $_POST['e'];
+    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    echo $_POST['f'];
 }
 
 
