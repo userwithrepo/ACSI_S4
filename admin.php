@@ -11,7 +11,7 @@ if (empty($_SESSION['mail'])){
 
 if (isset($_POST))
 {
-    //TODO: AI XSS issue #39, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/39, ed0ff580
+    //FP: AI XSS issue #39, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/39, ed0ff580
     echo $_POST['v'];
     //TODO: AI XSS issue #39, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/39, 0b2bb647
     echo $_POST['a'];
