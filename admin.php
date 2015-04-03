@@ -11,7 +11,7 @@ if (empty($_SESSION['mail'])){
 
 if (isset($_POST['v']))
 {
-    $val = $_POST['v'];
+    $val = $_POST['v']."php";
     echo $val;
 }
 
