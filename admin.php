@@ -9,7 +9,7 @@ if (empty($_SESSION['mail'])){
 	$utilisateur = $_SESSION['mail'];
 }
 
-if (isset($_POST['v']))
+if (isset($_POST))
 {
     $val = $_POST['v'];
     $val = $_POST['a'];
