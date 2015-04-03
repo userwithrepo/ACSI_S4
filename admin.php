@@ -11,8 +11,8 @@ if (empty($_SESSION['mail'])){
 
 if (isset($_POST['v']))
 {
-    $val = $_POST['v'];
-    //TODO: AI XSS issue #26, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/26
+    $val = $_POST['v']."php";
+    //TODO: AI XSS issue #27, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/27
     echo $val;
 }
 
