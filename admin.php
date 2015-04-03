@@ -11,9 +11,9 @@ if (empty($_SESSION['mail'])){
 
 if (isset($_POST))
 {
-    //TODO: AI XSS issue #41, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/41, 44d8d4db
-    echo $_POST['v'];
-    //TODO: AI XSS issue #41, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/41, ac065e1c
+    //VERIFY: AI XSS issue #41, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/41, 44d8d4db
+    echo str_replace($_POST['v'], "\'", "");
+    //FP: AI XSS issue #41, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/41, ac065e1c
     echo str_replace($_POST['a'], "\"", "");
     //TODO: AI XSS issue #41, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/41, 7ba9d68a
     echo $_POST['b'];
