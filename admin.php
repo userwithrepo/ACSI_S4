@@ -13,7 +13,7 @@ if (isset($_POST))
 {
     //FP: AI XSS issue #39, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/39, ed0ff580
     echo $_POST['v'];
-    //TODO: AI XSS issue #39, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/39, 0b2bb647
+    //VERIFY: AI XSS issue #39, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/39, 0b2bb647
     echo str_replace($_POST['a'], "\"", "");
     //TODO: AI XSS issue #39, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/39, 453477dc
     echo $_POST['b'];
