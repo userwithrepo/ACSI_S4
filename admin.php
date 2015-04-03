@@ -11,19 +11,19 @@ if (empty($_SESSION['mail'])){
 
 if (isset($_POST))
 {
-    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    //TODO: AI XSS issue #30, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/30, null
     echo $_POST['v'];
-    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    //TODO: AI XSS issue #30, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/30, null
     echo $_POST['a'];
-    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    //TODO: AI XSS issue #30, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/30, null
     echo $_POST['b'];
-    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    //TODO: AI XSS issue #30, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/30, null
     echo $_POST['c'];
-    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    //TODO: AI XSS issue #30, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/30, null
     echo $_POST['d'];
-    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    //TODO: AI XSS issue #30, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/30, null
     echo $_POST['e'];
-    //TODO: AI XSS issue #28, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/28
+    //TODO: AI XSS issue #30, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/30, null
     echo $_POST['f'];
 }
 
