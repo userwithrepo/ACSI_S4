@@ -11,14 +11,14 @@ if (empty($_SESSION['mail'])){
 
 if (isset($_POST))
 {
-    //REOPEN: AI XSS issue #74, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/74, 16177501
-    echo str_replace($_POST['v'], "\"", "");
     //AI exploit:
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-2a43eba/admin.php HTTP/1.1
     //Host: localhost
     //Accept-Encoding: identity
     //Connection: close
     //Content-Length: 0
+    //REOPEN: AI XSS issue #74, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/74, 16177501
+    echo str_replace($_POST['v'], "\"", "");
     //AI exploit:
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-09a585a/admin.php HTTP/1.1
     //Host: localhost
