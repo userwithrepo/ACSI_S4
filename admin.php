@@ -20,8 +20,8 @@ if (isset($_POST))
     //Content-Length: 41
     //
     //v=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
-    //TODO: AI XSS issue #74, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/74, 16177501
-    echo $_POST['v'];
+    //VERIFY: AI XSS issue #74, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/74, 16177501
+    echo str_replace($_POST['v'], "\"", "");
     //AI exploit:
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-09a585a/admin.php HTTP/1.1
     //Host: localhost
@@ -31,7 +31,7 @@ if (isset($_POST))
     //Content-Length: 41
     //
     //a=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
-    //TODO: AI XSS issue #74, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/74, ab25db79
+    //FP: AI XSS issue #74, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/74, ab25db79
     echo $_POST['a'];
     //AI exploit:
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-09a585a/admin.php HTTP/1.1
