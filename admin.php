@@ -74,7 +74,7 @@ if (isset($_POST))
     //
     //e=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
     echo $_POST['e'];
-    //TODO: AI XSS issue #113, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/113, 49870458
+    //VERIFY: AI XSS issue #113, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/113, 49870458
     //AI exploit:
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-f254c7b/admin.php HTTP/1.1
     //Host: localhost
