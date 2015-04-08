@@ -12,7 +12,7 @@ if (empty($_SESSION['mail'])){
 if (isset($_POST))
 {
     //AI exploit:
-    //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-2a43eba/admin.php HTTP/1.1
+    //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-f32d7bf/admin.php HTTP/1.1
     //Host: localhost
     //Accept-Encoding: identity
     //Connection: close
