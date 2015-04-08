@@ -12,15 +12,12 @@ if (empty($_SESSION['mail'])){
 if (isset($_POST))
 {
     //AI exploit:
-    //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-09a585a/admin.php HTTP/1.1
+    //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-f32d7bf/admin.php HTTP/1.1
     //Host: localhost
     //Accept-Encoding: identity
     //Connection: close
-    //Content-Type: application/x-www-form-urlencoded
-    //Content-Length: 41
-    //
-    //v=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
-    //VERIFY: AI XSS issue #74, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/74, 16177501
+    //Content-Length: 0
+    //REOPEN: AI XSS issue #74, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/74, 16177501
     echo str_replace($_POST['v'], "\"", "");
     //AI exploit:
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-09a585a/admin.php HTTP/1.1
