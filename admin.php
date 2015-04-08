@@ -86,7 +86,7 @@ if (isset($_POST))
     //Content-Length: 41
     //
     //f=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
-    //TODO: AI XSS issue #74, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/74, e00e0b49
+    //FIXED: AI XSS issue #74, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/74, e00e0b49
     echo $_POST['f'];
 }
 
