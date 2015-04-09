@@ -11,7 +11,7 @@ if (empty($_SESSION['mail'])){
 
 if (isset($_POST))
 {
-    //REOPEN: AI XSS issue #113, Medium, Cross-site Scripting, <a href="https://github.com/userwithrepo/ACSI_S4/issues/1">https://github.com/userwithrepo/ACSI_S4/issues/113</a>, 4d6447bf
+    //REOPEN: AI XSS issue #113, Medium, Cross-site Scripting, [Code](https://github.com/userwithrepo/ACSI_S4/issues/113), 4d6447bf
     //AI exploit:
     //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-09ddcb4/admin.php HTTP/1.1
     //Host: localhost
