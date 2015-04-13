@@ -6,8 +6,8 @@
 //Accept-Encoding: identity
 //Connection: close
 echo $_REQUEST['id'];
-$id = $_REQUEST['id'];
-$user_id = $_REQUEST['user_id'];
+$id = htmlspecialchars(mysql_real_escape_string($_REQUEST['id']));
+$user_id = htmlspecialchars(mysql_real_escape_string($_REQUEST['user_id']));
 //TODO: AI XSS issue #149, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/149, 0af3d4a2
 //AI exploit:
 //GET /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-2ecc773/vulnerable.php?user_id=%3Cscript%3Ealert%281%29%3C%2Fscript%3E HTTP/1.1
