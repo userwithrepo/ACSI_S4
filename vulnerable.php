@@ -1,4 +1,5 @@
 <?php
+echo $_REQUEST['id'];
 $id = $_REQUEST['id'];
 $user_id = $_REQUEST['user_id'];
 echo "Message for user_id = $user_id and message_id = $message_id";
