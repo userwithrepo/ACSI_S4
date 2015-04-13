@@ -1,6 +1,6 @@
 <?php
 $id = htmlspecialchars(mysql_real_escape_string($_REQUEST['id']));
-$user_id = $_REQUEST['user_id'];
+$user_id = htmlspecialchars(mysql_real_escape_string($_REQUEST['user_id']));
 //REOPEN: AI XSS issue #155, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/155, ad2a0e0b
 //AI exploit:
 //GET /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-1f6ea6d/vulnerable.php?user_id=%3Cscript%3Ealert%281%29%3C%2Fscript%3E HTTP/1.1
