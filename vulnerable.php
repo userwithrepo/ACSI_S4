@@ -18,7 +18,7 @@ if(isset($id) && isset($user_id))
 	//Accept-Encoding: identity
 	//Connection: close
 	echo "Message for user_id = $user_id and message_id = $message_id";
-	//REOPEN: AI XSS issue #183, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/183, 6f2209b7
+	//FP: AI XSS issue #183, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/183, 6f2209b7
 	//AI exploit:
 	//GET /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-b194df5/vulnerable.php HTTP/1.1
 	//Host: localhost
