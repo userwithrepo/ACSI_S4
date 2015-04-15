@@ -18,7 +18,7 @@ if(isset($id) && isset($user_id))
     //Connection: close
     $res = mysql_query("SELECT msg FROM dialogs WHERE user_id='$user_id'") or dir(mysql_error());
     $res = mysql_fetch_assoc($res);
-    //TODO: AI XSS issue #197, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/197, 186cd75e
+    //FP: AI XSS issue #197, Medium, Cross-site Scripting, https://github.com/userwithrepo/ACSI_S4/issues/197, 186cd75e
     //AI exploit:
     //GET /../../../../../../PHP_Repos/userwithrepo.ACSI_S4/userwithrepo-ACSI_S4-b9b00de/vulnerable.php?user_id=1&id=1 HTTP/1.1
     //Host: localhost
